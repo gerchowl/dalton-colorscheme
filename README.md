@@ -25,16 +25,16 @@ Red-green color vision deficiency affects ~8% of men and ~0.5% of women worldwid
 
 ## Palette
 
-| ANSI Name       | Color     | Hex       | Bright    | Hex       |
-|-----------------|-----------|-----------|-----------|-----------|
-| Black           | ![#282828](https://placehold.co/16x16/282828/282828) | `#282828` | ![#3c3c3c](https://placehold.co/16x16/3c3c3c/3c3c3c) | `#3c3c3c` |
-| Red             | ![#d85050](https://placehold.co/16x16/d85050/d85050) | `#d85050` | ![#f07068](https://placehold.co/16x16/f07068/f07068) | `#f07068` |
-| Green           | ![#5b914e](https://placehold.co/16x16/5b914e/5b914e) | `#5b914e` | ![#88b97d](https://placehold.co/16x16/88b97d/88b97d) | `#88b97d` |
-| Yellow          | ![#c4c40c](https://placehold.co/16x16/c4c40c/c4c40c) | `#c4c40c` | ![#eded02](https://placehold.co/16x16/eded02/eded02) | `#eded02` |
-| Blue            | ![#7aa2f7](https://placehold.co/16x16/7aa2f7/7aa2f7) | `#7aa2f7` | ![#97b1f1](https://placehold.co/16x16/97b1f1/97b1f1) | `#97b1f1` |
-| Magenta         | ![#a050d0](https://placehold.co/16x16/a050d0/a050d0) | `#a050d0` | ![#c070f0](https://placehold.co/16x16/c070f0/c070f0) | `#c070f0` |
-| Cyan            | ![#56717f](https://placehold.co/16x16/56717f/56717f) | `#56717f` | ![#6691a7](https://placehold.co/16x16/6691a7/6691a7) | `#6691a7` |
-| White           | ![#b8b8b8](https://placehold.co/16x16/b8b8b8/b8b8b8) | `#b8b8b8` | ![#d8d8d8](https://placehold.co/16x16/d8d8d8/d8d8d8) | `#d8d8d8` |
+| ANSI Name | Color | Hex | Name | Bright | Hex | Name |
+|-----------|-------|-----|------|--------|-----|------|
+| Black | ![#282828](https://placehold.co/16x16/282828/282828) | `#282828` | black | ![#3c3c3c](https://placehold.co/16x16/3c3c3c/3c3c3c) | `#3c3c3c` | ash |
+| Red | ![#d85050](https://placehold.co/16x16/d85050/d85050) | `#d85050` | punch red | ![#f07068](https://placehold.co/16x16/f07068/f07068) | `#f07068` | hot cherry |
+| Green | ![#5b914e](https://placehold.co/16x16/5b914e/5b914e) | `#5b914e` | dark grass | ![#88b97d](https://placehold.co/16x16/88b97d/88b97d) | `#88b97d` | soft lime |
+| Yellow | ![#c4c40c](https://placehold.co/16x16/c4c40c/c4c40c) | `#c4c40c` | vivid gold | ![#eded02](https://placehold.co/16x16/eded02/eded02) | `#eded02` | neon gold |
+| Blue | ![#7aa2f7](https://placehold.co/16x16/7aa2f7/7aa2f7) | `#7aa2f7` | clear blue | ![#97b1f1](https://placehold.co/16x16/97b1f1/97b1f1) | `#97b1f1` | soft periwinkle |
+| Magenta | ![#a050d0](https://placehold.co/16x16/a050d0/a050d0) | `#a050d0` | vivid violet | ![#c070f0](https://placehold.co/16x16/c070f0/c070f0) | `#c070f0` | hot violet |
+| Cyan | ![#56717f](https://placehold.co/16x16/56717f/56717f) | `#56717f` | steel teal | ![#6691a7](https://placehold.co/16x16/6691a7/6691a7) | `#6691a7` | slate blue |
+| White | ![#b8b8b8](https://placehold.co/16x16/b8b8b8/b8b8b8) | `#b8b8b8` | pale silver | ![#d8d8d8](https://placehold.co/16x16/d8d8d8/d8d8d8) | `#d8d8d8` | bright mist |
 
 **Base colors:**
 
@@ -184,10 +184,6 @@ Lazygit versions <=0.59 may not apply hex colors from the config file in some se
 ## See also
 
 - [COMPARISON.md](./COMPARISON.md) — scientific comparison to Okabe-Ito, Modus Vivendi, EF Deuteranopia, and Solarized
-
-## Credits
-
-Designed and tuned by [@larsgerchow](https://github.com/larsgerchow) with assistance from Claude Code.
 
 ## License
 
