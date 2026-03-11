@@ -86,7 +86,35 @@ config.colors = {
 
 ### Lazygit
 
-Add to `~/.config/lazygit/config.yml` (or `~/Library/Application Support/lazygit/config.yml` on macOS):
+**Option 1: Config merge (recommended)**
+
+Download the theme file and load it alongside your config:
+
+```bash
+# Linux
+mkdir -p ~/.config/lazygit
+curl -o ~/.config/lazygit/dalton-dark.yml \
+  https://raw.githubusercontent.com/gerchowl/dalton-colorscheme/master/lazygit/themes-mergable/dalton-dark.yml
+
+# macOS
+mkdir -p ~/Library/Application\ Support/lazygit
+curl -o ~/Library/Application\ Support/lazygit/dalton-dark.yml \
+  https://raw.githubusercontent.com/gerchowl/dalton-colorscheme/master/lazygit/themes-mergable/dalton-dark.yml
+```
+
+Then set `LG_CONFIG_FILE` in your shell rc:
+
+```bash
+# Linux
+export LG_CONFIG_FILE="$HOME/.config/lazygit/config.yml,$HOME/.config/lazygit/dalton-dark.yml"
+
+# macOS
+export LG_CONFIG_FILE="$HOME/Library/Application Support/lazygit/config.yml,$HOME/Library/Application Support/lazygit/dalton-dark.yml"
+```
+
+**Option 2: Manual paste**
+
+Add to your lazygit config:
 
 ```yaml
 gui:
