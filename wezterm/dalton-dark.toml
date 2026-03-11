@@ -1,0 +1,33 @@
+[colors]
+foreground = "#c8c9cc"
+background = "#1b1b1b"
+cursor_bg = "#9a9a9a"
+cursor_fg = "#1b1b1b"
+selection_bg = "#333333"
+selection_fg = "#dcdcdc"
+
+ansi = [
+  "#282828", # black
+  "#d85050", # red        punch red
+  "#5b914e", # green      dark grass (30% sat)
+  "#c4c40c", # yellow     vivid gold (88% sat)
+  "#7aa2f7", # blue       clear blue
+  "#a050d0", # magenta    vivid violet
+  "#56717f", # cyan       steel teal (H=200°)
+  "#b8b8b8", # white      pale silver
+]
+
+brights = [
+  "#3c3c3c", # br black   ash
+  "#f07068", # br red     hot cherry
+  "#88b97d", # br green   soft lime (30% sat)
+  "#eded02", # br yellow  neon gold (98% sat)
+  "#97b1f1", # br blue    soft periwinkle
+  "#c070f0", # br magenta hot violet
+  "#6691a7", # br cyan    slate blue (H=200°)
+  "#d8d8d8", # br white   bright mist
+]
+
+[metadata]
+name = "Dalton Dark"
+author = "Lars Gerchow"

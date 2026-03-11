@@ -1,0 +1,109 @@
+/* Dalton Dark — color palette + shared styles */
+
+:root {
+  --background: #1b1b1b;
+  --black: #282828;
+  --selection: #333333;
+  --red: #d85050;
+  --green: #5b914e;
+  --yellow: #c4c40c;
+  --blue: #7aa2f7;
+  --magenta: #a050d0;
+  --cyan: #56717f;
+  --white: #b8b8b8;
+  --br-black: #3c3c3c;
+  --br-red: #f07068;
+  --br-green: #88b97d;
+  --br-yellow: #eded02;
+  --br-blue: #97b1f1;
+  --br-magenta: #c070f0;
+  --br-cyan: #6691a7;
+  --br-white: #d8d8d8;
+  --foreground: #c8c9cc;
+}
+
+body {
+  background: #111;
+  color: #ccc;
+  font-family: "JetBrains Mono", "SF Mono", monospace;
+  font-size: 11px;
+  padding: 20px;
+}
+
+h1 { color: #ddd; font-size: 16px; margin-bottom: 4px; }
+h2 { color: #999; font-size: 12px; font-weight: normal; margin-top: 0; }
+
+/* Swatch cards */
+.swatches { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0; }
+.swatch-card { display: flex; align-items: center; gap: 6px; background: var(--background); border: 1px solid var(--selection); border-radius: 4px; padding: 6px 10px; }
+.swatch-big { width: 28px; height: 28px; border-radius: 3px; border: 1px solid #555; }
+.swatch { display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 4px; vertical-align: middle; border: 1px solid #444; }
+
+/* Luminance bar */
+.lum-bar { display: flex; align-items: center; gap: 8px; margin: 2px 0; }
+.lum-fill { height: 8px; border-radius: 2px; }
+
+/* Contrast matrix */
+.matrix { border-collapse: collapse; }
+.matrix td, .matrix th { width: 80px; height: 80px; text-align: center; vertical-align: middle; padding: 2px; font-size: 10px; border: 1px solid #222; }
+.matrix th { text-align: right; padding-right: 8px; width: 150px; white-space: nowrap; font-weight: normal; }
+.matrix th.col-header { text-align: left; writing-mode: vertical-lr; transform: rotate(180deg); height: 150px; width: 80px; padding: 8px 2px; vertical-align: bottom; }
+.pass { font-weight: bold; }
+.weak { }
+.fail { font-style: italic; }
+.legend { margin-top: 20px; color: #999; font-size: 11px; }
+
+/* Color spectrum layout */
+.layout { display: flex; gap: 40px; flex-wrap: wrap; }
+.section { flex: 1; min-width: 400px; }
+svg text { font-family: "JetBrains Mono", monospace; }
+
+/* ANSI strips */
+.strip { display: flex; height: 60px; margin: 4px 0; border-radius: 4px; overflow: hidden; }
+.strip-cell { flex: 1; display: flex; align-items: center; justify-content: center; font-size: 9px; flex-direction: column; gap: 2px; }
+
+/* Hue-saturation plot */
+.hs-plot { position: relative; width: 600px; height: 320px; border: 1px solid var(--selection); border-radius: 4px; background: var(--background); margin: 8px 0; }
+.hs-dot { position: absolute; width: 24px; height: 24px; border-radius: 50%; border: 2px solid #fff3; transform: translate(-50%, -50%); }
+.hs-label { position: absolute; font-size: 9px; transform: translate(-50%, 0); white-space: nowrap; }
+.hs-axis { position: absolute; color: #555; font-size: 9px; }
+
+/* Per-color utility classes (background + foreground) */
+.bg-background { background: var(--background); }
+.fg-background { color: var(--background); }
+.bg-black { background: var(--black); }
+.fg-black { color: var(--black); }
+.bg-selection { background: var(--selection); }
+.fg-selection { color: var(--selection); }
+.bg-cyan { background: var(--cyan); }
+.fg-cyan { color: var(--cyan); }
+.bg-magenta { background: var(--magenta); }
+.fg-magenta { color: var(--magenta); }
+.bg-red { background: var(--red); }
+.fg-red { color: var(--red); }
+.bg-green { background: var(--green); }
+.fg-green { color: var(--green); }
+.bg-br-cyan { background: var(--br-cyan); }
+.fg-br-cyan { color: var(--br-cyan); }
+.bg-br-magenta { background: var(--br-magenta); }
+.fg-br-magenta { color: var(--br-magenta); }
+.bg-br-red { background: var(--br-red); }
+.fg-br-red { color: var(--br-red); }
+.bg-blue { background: var(--blue); }
+.fg-blue { color: var(--blue); }
+.bg-br-blue { background: var(--br-blue); }
+.fg-br-blue { color: var(--br-blue); }
+.bg-br-green { background: var(--br-green); }
+.fg-br-green { color: var(--br-green); }
+.bg-white { background: var(--white); }
+.fg-white { color: var(--white); }
+.bg-yellow { background: var(--yellow); }
+.fg-yellow { color: var(--yellow); }
+.bg-foreground { background: var(--foreground); }
+.fg-foreground { color: var(--foreground); }
+.bg-br-white { background: var(--br-white); }
+.fg-br-white { color: var(--br-white); }
+.bg-br-yellow { background: var(--br-yellow); }
+.fg-br-yellow { color: var(--br-yellow); }
+.bg-br-black { background: var(--br-black); }
+.fg-br-black { color: var(--br-black); }
