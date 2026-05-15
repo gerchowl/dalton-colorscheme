@@ -9,7 +9,10 @@ Red-green color vision deficiency affects ~8% of men and ~0.5% of women worldwid
 ## What's included
 
 - **WezTerm** color palette (TOML + Lua snippet)
+- **Ghostty** color config (`ghostty/dalton-dark.conf`)
+- **Zellij** theme (`zellij/dalton-dark.kdl`)
 - **Lazygit** theme config (YAML)
+- **Claude Code** — uses the built-in `dark-daltonized` theme; notes in `claude-code/README.md`
 - **Contrast matrix** (HTML) — WCAG contrast validation
 - **Color spectrum** (HTML) — hue×saturation, hue×lightness maps with gradient backgrounds
 - **CSS custom properties** — single source of truth for all colors

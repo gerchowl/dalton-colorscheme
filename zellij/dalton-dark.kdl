@@ -1,0 +1,28 @@
+// Dalton Dark — colorblind-friendly (deuteranopia/protanopia) terminal palette
+// for zellij. Matches the canonical palette in `palettes.json`.
+//
+// Install:
+//   1. Append this block to `~/.config/zellij/config.kdl` (or `themes/dalton-dark.kdl`).
+//   2. Set `theme "dalton-dark"` near the top of your config.
+//
+// Zellij theme schema:
+//   fg, bg, black, red, green, yellow, blue, magenta, cyan, white, orange
+// Bright variants (8..15) are not part of zellij's theme model — the eight
+// ANSI slots map to the dalton-dark normal ANSI 0..7. `orange` is zellij's
+// extra slot; we derive it from `br-red` (hot cherry) which is the warmest
+// non-yellow hue in the palette.
+themes {
+    dalton-dark {
+        fg "#c8c9cc"
+        bg "#1b1b1b"
+        black "#282828"
+        red "#d85050"
+        green "#5b914e"
+        yellow "#c4c40c"
+        blue "#7aa2f7"
+        magenta "#a050d0"
+        cyan "#56717f"
+        white "#b8b8b8"
+        orange "#f07068"
+    }
+}
