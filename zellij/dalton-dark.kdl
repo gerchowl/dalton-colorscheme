@@ -11,10 +11,18 @@
 // ANSI slots map to the dalton-dark normal ANSI 0..7. `orange` is zellij's
 // extra slot; we derive it from `br-red` (hot cherry) which is the warmest
 // non-yellow hue in the palette.
+//
+// Quirk (zellij ≥ 0.44): in simple-palette mode, `bg` is NOT used as the
+// pane background — the outer terminal (Ghostty/WezTerm/...) paints that.
+// `bg` is reused as the *selection highlight* background in three places:
+// text_selected, table_cell_selected, list_selected (see zellij-utils
+// data.rs `impl From<Palette> for Styling`). So `bg` here must be the
+// canonical dalton `selection` color (#333333), not the dalton terminal
+// background (#1b1b1b) — using the latter makes selection invisible.
 themes {
     dalton-dark {
         fg "#c8c9cc"
-        bg "#1b1b1b"
+        bg "#333333"  // selection-bg in zellij's simple-palette mode (see header)
         black "#282828"
         red "#d85050"
         green "#5b914e"
