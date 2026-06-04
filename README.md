@@ -12,6 +12,7 @@ Red-green color vision deficiency affects ~8% of men and ~0.5% of women worldwid
 - **Ghostty** color config (`ghostty/dalton-dark.conf`)
 - **Zellij** theme (`zellij/dalton-dark.kdl`)
 - **Lazygit** theme config (YAML)
+- **herdr** theme config (`herdr/dalton-dark.toml`)
 - **Claude Code** — uses the built-in `dark-daltonized` theme; notes in `claude-code/README.md`
 - **Contrast matrix** (HTML) — WCAG contrast validation
 - **Color spectrum** (HTML) — hue×saturation, hue×lightness maps with gradient backgrounds
@@ -149,6 +150,38 @@ gui:
     defaultFgColor:
       - "#c8c9cc"
 ```
+
+### herdr
+
+herdr ([herdr.dev](https://herdr.dev)) supports per-token overrides on top of a
+built-in base theme. Paste [`herdr/dalton-dark.toml`](herdr/dalton-dark.toml)
+into `~/.config/herdr/config.toml`:
+
+```toml
+[theme]
+name = "terminal"  # anything not overridden follows the host ANSI palette
+
+[theme.custom]
+accent = "#7aa2f7"      # clear blue — primary accent, active borders
+panel_bg = "#282828"    # raised panels over #1b1b1b terminal bg
+surface0 = "#333333"    # selected/focused items
+surface1 = "#3c3c3c"    # hover/active
+surface_dim = "#282828" # separators
+overlay0 = "#9a9a9a"    # muted text
+overlay1 = "#b8b8b8"
+text = "#c8c9cc"
+subtext0 = "#b8b8b8"
+mauve = "#c070f0"       # branch labels
+green = "#88b97d"       # done / idle
+yellow = "#c4c40c"      # working / running
+red = "#d85050"         # blocked / needs attention
+blue = "#7aa2f7"        # unseen / done notifications
+teal = "#6691a7"        # notification accents
+peach = "#f07068"       # interrupted / warning
+```
+
+Don't manage this file with Home Manager — herdr writes in-app settings back
+to it (the writes are surgical upserts, so the theme block survives).
 
 ### Nix / Home Manager
 

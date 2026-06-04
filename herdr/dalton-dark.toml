@@ -1,0 +1,31 @@
+# Dalton Dark — herdr theme (https://herdr.dev)
+#
+# herdr has no named custom themes; paste this into ~/.config/herdr/config.toml.
+# Base "terminal" makes anything not overridden follow the host terminal's ANSI
+# palette — with a Dalton-themed terminal (ghostty/wezterm configs in this
+# repo) the fallbacks stay on-palette too.
+#
+# Token semantics (herdr src/app/state.rs): green = done/idle,
+# yellow = working, red = blocked, peach = interrupted/warning,
+# blue/teal = notification accents, mauve = branch labels.
+
+[theme]
+name = "terminal"
+
+[theme.custom]
+accent = "#7aa2f7"      # clear blue — dalton's primary (blue-yellow) axis
+panel_bg = "#282828"    # black — raised panel over #1b1b1b terminal bg
+surface0 = "#333333"    # selection bg — selected/focused items
+surface1 = "#3c3c3c"    # ash — hover/active
+surface_dim = "#282828" # separators
+overlay0 = "#9a9a9a"    # cursor gray — muted text
+overlay1 = "#b8b8b8"    # pale silver
+text = "#c8c9cc"        # dalton foreground
+subtext0 = "#b8b8b8"    # dim labels
+mauve = "#c070f0"       # hot violet (bright magenta, AA) — branch labels
+green = "#88b97d"       # soft lime (bright, AA) — done/idle
+yellow = "#c4c40c"      # vivid gold — working/running
+red = "#d85050"         # punch red — blocked/needs attention
+blue = "#7aa2f7"        # clear blue — unseen/done notifications
+teal = "#6691a7"        # slate blue (bright cyan, AA) — notification accents
+peach = "#f07068"       # hot cherry — interrupted/warning (luminance-distinct from punch red)
